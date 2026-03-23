@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1rem;
   color: black;
   margin: 0;
@@ -57,7 +57,7 @@ p {
 }
 
 a {
-  color: #02524e;
+  color: #520237;
   text-decoration: none;
 }
 
@@ -95,7 +95,7 @@ select {
 button {
   width: 100%;
   padding: 1rem;
-  background-color: #02463a;
+  background-color: rgb(167, 7, 140);
   color: white;
   border: none;
   border-radius: 0.5rem;
