@@ -115,29 +115,27 @@
       <p>Septiembre 2001 - Febrero 2003</p>
     </section>
 
-<sección identificación="contacto">
-  <h2 identificacación="titulocontacto">
-    <i clase="fa fa-sobre"></i> Contacto
-  </h2>
-  <forma identifación="Formulario de contacto"">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-    <aporte identificación="nombre"tipo="texto"marcador de posicióm="nombre"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <aporte de identificación="correo electrónico"tipo="marcador de posición="Correo Eledtrónico"requerido/>
-    <seleccionar identificación="asunto"requerido>
-      <option valor="">---</opción>
-      <opción valor="información">Información</opción>
-      <opción valor="trabajo">Oferta Trabajo</opciónn>
-      <opcióon valor="otro">Otro</opción>
-    </selección>
-    <areadetexto identificación="mensaje" filas="4" marcador de posición="Escribe tu mensaje"requerido longitud máxima"500"></areadetexto>
-    <botón identifación="enviar" tipo="entregar">
-      <i clase="fa fa-plane de papel"></i> Enviar
-    </botón>
-  </forma>
-  <pag identificación="formularioMensaje"></p>
-  </sección>
-
-
-  <pie de página> <pag> Todos los derechos reservados.</p>
-  </pie de página>
-  </cuerpo>
-<guion src="script.js" aplazar></guión>
+<form id="contactForm" onsubmit="return enviarFormulario(event)">
+<input id="nombre" type="text" placeholder="Nombre" required maxlength="50"/>
+<input id="email" type="email" placeholder="Email" required />
+<select id="asunto">
+<option value="">---</option>
+<option value="info">Información</option>
+<option value="job">Oferta Trabajo</option>
+<option value="other">Otro</option>
+</select>
+<textarea id="mensaje" rows="10" placeholder="Escribe tu mensaje" maxlength="1000"></textarea>
+<button id="enviar" type="submit">
+<i class="fa fa-paper-plane"></i> Enviar
+</button>
+</form>
+<p id="formMessage"></p>
+</section>
+ 
+ 
+  <footer>
+<p>&copy; All rights reserved.</p>
+</footer>
+</body>
+<script src="script.js" defer></script>
 </html>
