@@ -32,12 +32,12 @@ Este portafolio web muestra mis proyectos de **QA**. Incluye un **formulario de 
 ## 🗄 Base de Datos
 Se ha creado una base de datos en Supabase para almacenar los datos enviados desde el formulario de contacto.  
 - La carpeta `sql` incluye todas las **consultas SQL de prueba**, que permiten generar, consultar, editar o eliminar datos de prueba según sea necesario.  
-- Proyecto Supabase (requiere acceso): [Supabase Project](https://supabase.com/dashboard/project/vtizuqohukyyxvcshmbs)  
+- Proyecto Supabase (requiere acceso): [Supabase Project](https://supabase.com/dashboard/project/bavsppsyyfzblwdvhrca)
 
 ## 🗄 API de Formulario
 Se ha generado una API que permite agregar, editar, consultar y eliminar datos de la base de datos creada en supabase.
-- URL API (requiere acceso): [Supabase API](https://vtizuqohukyyxvcshmbs.supabase.co)  
-- Documentación de la API: [Documentación API](./apidoc.pdf) 
+- URL API (requiere acceso): [Supabase API](https://bavsppsyyfzblwdvhrca.supabase.co/rest/v1/form)  
+- Documentación de la API: [Documentación API](https://anacastellanorubio-design.github.io/portafolio-qa/apidoc.html) 
 ---
 
 ## ⚙️ QA Testing
