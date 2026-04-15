@@ -1,14 +1,19 @@
 body {
   font-family: Verdana,Arial,sans-serif;
   font-size: 1rem;
-  color: black;
+  color: rgb (,0 ,0 ,0);
   margin: 0;
 }
 
 header {
+<<<<<<< HEAD
 
   background-color: rgb(167, 7, 140);
   color: rgb(25, 146, 164);
+=======
+  background-color: rgb(167,7, 140);
+  color: rgb(25, 146, 165);
+>>>>>>> 99eb3382904eaef4df74e2feea35afedf70c4033
   padding: 5rem;
   text-align: center;
 }
@@ -97,7 +102,11 @@ button {
   width: 100%;
   padding: 1rem;
   background-color: rgb(167, 7, 140);
+<<<<<<< HEAD
   color: rgb(25,146, 165);
+=======
+  color: rgb(25, 146, 165);
+>>>>>>> 99eb3382904eaef4df74e2feea35afedf70c4033
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
