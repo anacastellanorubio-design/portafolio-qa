@@ -52,20 +52,27 @@ function postAPI (data){
     },
     body: JSON.stringify(data)
   })
-  .then(function(response) {
-    if (!response.ok) throw new Error('Error');
+  .then(async function(response) {
+
+    const text = await response.text();
+
+    console.log("STATUS:", response.status);
+    console.log("RESPUESTA SUPABASE:", text);
+
+    if (!response.ok) {
+      throw new Error(text);
+    }
+
     return true;
   })
   .then(function() {
-    //Si se envian los datos bien, muestra un mensaje de exito
     mostrarMensajeExito();
   })
   .catch(function(error) {
-    //Muestra mensaje de error y muestra error en la consola
-    console.log(error)
+    console.log("ERROR REAL:", error);
     mostrarMensajeError();
   });
-};
+}
 
 //MOSTRAR DATOS EN UNA TABLA DE UNA API CON GET
 //1. USA ESTA FUNCION EN EL BOTON DE LA PAGINA EN LA QUE QUIERAS MOSTRAR LOS DATOS
