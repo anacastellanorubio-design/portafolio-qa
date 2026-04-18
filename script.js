@@ -2,7 +2,8 @@
 const SUPABASE_URL = 'https://bavsppsyyfzblwdvhrca.supabase.co/rest/v1/form';
 const SUPABASE_API_KEY = 'sb_publishable_AYa4RIwBAu1c5ORvsjwCxw_3aOrL8_C';
 
-console.log("SCRIPT CARGADO");
+
+
 
 
 
