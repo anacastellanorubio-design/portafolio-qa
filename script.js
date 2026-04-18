@@ -1,7 +1,7 @@
 // 1. CAMBIAR POR URL Y KEY DE TU API
 const SUPABASE_URL ='https://bavsppsyyfzblwdvhrca.supabase.co/rest/v1/form';'
 const SUPABASE_API_KEY = 'sb_publishable_AYa4RIwBAu1c5ORvsjwCxw_3aOrL8_C';
-console.log("formMessage:", document.getElementById('formMessage'));
+
 
 
 
@@ -23,10 +23,14 @@ function enviarFormulario(event) {
 }
 //4. CAMBIA SI QUIERES EL MENSAJE QUE MUESTRA AL ENVIAR EL FORMULARIO (OPCIONAL) 
 function mostrarMensajeExito(){
-  var formMessage = document.getElementById('formMessage'); //id del elemento de la pagina donde se va a mostrar mensaje
-  formMessage.textContent = "Formulario enviado correctamente"; //mensaje que va a mostrarse
-  formMessage.style.color  = "green"; //color en el que se va a mostrar
-};
+  console.log("ENTRO EN MENSAJE DE ÉXITO");
+
+  var formMessage = document.getElementById('formMessage');
+  console.log("formMessage elemento:", formMessage);
+
+  formMessage.textContent = "Formulario enviado correctamente";
+  formMessage.style.color = "green";
+}
 
 //5. CAMBIA SI QUIERES EL MENSAJE QUE MUESTRA AL ENVIAR EL FORMULARIO (OPCIONAL) 
 function mostrarMensajeError(){
