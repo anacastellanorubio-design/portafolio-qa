@@ -1,8 +1,8 @@
 // 1. CAMBIAR POR URL Y KEY DE TU API
-
 const SUPABASE_URL = 'https://bavsppsyyfzblwdvhrca.supabase.co/rest/v1/form';
 const SUPABASE_API_KEY = 'sb_publishable_AYa4RIwBAu1c5ORvsjwCxw_3aOrL8_C';
-console.log("formMessage:", document.getElementById('formMessage'));
+
+console.log("SCRIPT CARGADO");
 
 
 
@@ -10,7 +10,10 @@ console.log("formMessage:", document.getElementById('formMessage'));
 //ENVIAR DATOS DE UN FORMULARIO A UNA API CON POST
 //2. FUNCION PARA ENVIAR DATOS DEL FORMULARIO A LA API, esta funcion debes ponerla en el boton del formulario que quieras usar.
 function enviarFormulario(event) {
-  event.preventDefault(); 
+  event.preventDefault();
+
+  console.log("ENVIAR FORMULARIO EJECUTADO");
+  
 
   //3. CAMBIA SI ES NECESARIO LOS DATOS, DEBES INDICAR EL NOMBRE DEL CAMPO QUE QUIERES MANDAR A LA API, Y EL ID DEL FORMULARIO QUE TIENE ESE DATO.
   var data = {
