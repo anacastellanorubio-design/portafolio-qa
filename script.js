@@ -1,36 +1,31 @@
 // 1. CAMBIAR POR URL Y KEY DE TU API
 const SUPABASE_URL = 'https://bavsppsyyfzblwdvhrca.supabase.co/rest/v1/form';
+                      
 const SUPABASE_API_KEY = 'sb_publishable_AYa4RIwBAu1c5ORvsjwCxw_3aOrL8_C';
-
-
 
 
 //ENVIAR DATOS DE UN FORMULARIO A UNA API CON POST
 //2. FUNCION PARA ENVIAR DATOS DEL FORMULARIO A LA API, esta funcion debes ponerla en el boton del formulario que quieras usar.
 function enviarFormulario(event) {
   event.preventDefault();
-
+  
 
   //3. CAMBIA SI ES NECESARIO LOS DATOS, DEBES INDICAR EL NOMBRE DEL CAMPO QUE QUIERES MANDAR A LA API, Y EL ID DEL FORMULARIO QUE TIENE ESE DATO.
-  var data = {    
-
-  name: document.getElementById('nombre').value,
-  email: document.getElementById('email').value,
-  subject: document.getElementById('asunto').value,
-  message: document.getElementById('mensaje').value
-};
+  var data = {
+    nombre: document.getElementById('nombre').value, //campo name de la api, se obtiene del input del formulario con id nombre
+    email: document.getElementById('email').value, //campo email de la api, se obtiene del input del formulario con id email
+    asunto: document.getElementById('asunto').value, //campo subject de la api, se obtiene del input del formulario con id asunto
+    mensaje: document.getElementById('mensaje').value //campo message de la api, se obtiene del input del formulario con id mensaje
+  }
   postAPI(data);
-data);     
-
 
    return false;
 }
-
 //4. CAMBIA SI QUIERES EL MENSAJE QUE MUESTRA AL ENVIAR EL FORMULARIO (OPCIONAL) 
 function mostrarMensajeExito(){
-  var formMessage = document.getElementById('formMessage');//id del elemento de la página se va a mostrar 
-  formMessage.textContent = "Formulario enviado correctamente";// mensaje que va a mostrarse
-  formMessage.style.color  = "green";// color en el que se va a mostrar
+    var formMessage = document.getElementById('formMessage');
+  formMessage.textContent = "Formulario enviado correctamente";
+  formMessage.style.color  = "green";
 }
 
 //5. CAMBIA SI QUIERES EL MENSAJE QUE MUESTRA AL ENVIAR EL FORMULARIO (OPCIONAL) 
@@ -141,3 +136,5 @@ function getAPI() {
     return response.json();
   });
 };
+
+
