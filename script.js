@@ -9,10 +9,10 @@ function enviarFormulario(event) {
   
   //3. CAMBIA SI ES NECESARIO LOS DATOS, DEBES INDICAR EL NOMBRE DEL CAMPO QUE QUIERES MANDAR A LA API, Y EL ID DEL FORMULARIO QUE TIENE ESE DATO.  
   var data = {
-  name: document.getElementById('nombre').value,
+  nombre: document.getElementById('nombre').value,
   email: document.getElementById('email').value,
-  subject: document.getElementById('asunto').value,
-  message: document.getElementById('mensaje').value
+  asunto: document.getElementById('asunto').value,
+  mensaje: document.getElementById('mensaje').value
 };
   postAPI(data);     
 
