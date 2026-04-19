@@ -8,43 +8,29 @@ const SUPABASE_API_KEY = 'sb_publishable_AYa4RIwBAu1c5ORvsjwCxw_3aOrL8_C';
 //ENVIAR DATOS DE UN FORMULARIO A UNA API CON POST
 //2. FUNCION PARA ENVIAR DATOS DEL FORMULARIO A LA API, esta funcion debes ponerla en el boton del formulario que quieras usar.
 function enviarFormulario(event) {
-<<<<<<< HEAD
   event.preventDefault();
 
-  console.log("ENVIAR FORMULARIO EJECUTADO");
-  
 
   //3. CAMBIA SI ES NECESARIO LOS DATOS, DEBES INDICAR EL NOMBRE DEL CAMPO QUE QUIERES MANDAR A LA API, Y EL ID DEL FORMULARIO QUE TIENE ESE DATO.
-  var data = {  
-=======
-  event.preventDefault(); 
-  
-  //3. CAMBIA SI ES NECESARIO LOS DATOS, DEBES INDICAR EL NOMBRE DEL CAMPO QUE QUIERES MANDAR A LA API, Y EL ID DEL FORMULARIO QUE TIENE ESE DATO.  
-  var data = {
->>>>>>> afb2b660e821a1aa484e85d992dec93e1fc24d37
+  var data = {    
+
   name: document.getElementById('nombre').value,
   email: document.getElementById('email').value,
   subject: document.getElementById('asunto').value,
   message: document.getElementById('mensaje').value
 };
-<<<<<<< HEAD
   postAPI(data);
-=======
-  postAPI(data);     
->>>>>>> afb2b660e821a1aa484e85d992dec93e1fc24d37
+data);     
+
 
    return false;
 }
 
 //4. CAMBIA SI QUIERES EL MENSAJE QUE MUESTRA AL ENVIAR EL FORMULARIO (OPCIONAL) 
 function mostrarMensajeExito(){
-  console.log("ENTRO EN MENSAJE DE ÉXITO");
-
-  var formMessage = document.getElementById('formMessage');
-  console.log("formMessage elemento:", formMessage);
-
-  formMessage.textContent = "Formulario enviado correctamente";
-  formMessage.style.color  = "green";
+  var formMessage = document.getElementById('formMessage');//id del elemento de la página se va a mostrar 
+  formMessage.textContent = "Formulario enviado correctamente";// mensaje que va a mostrarse
+  formMessage.style.color  = "green";// color en el que se va a mostrar
 }
 
 //5. CAMBIA SI QUIERES EL MENSAJE QUE MUESTRA AL ENVIAR EL FORMULARIO (OPCIONAL) 
